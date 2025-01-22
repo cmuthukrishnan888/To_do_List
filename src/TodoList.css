@@ -1,0 +1,87 @@
+:root{
+    --bg: #212222;
+    --btn: #8a24e3;
+    --text:#efebf2;
+    --font:18px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--bg);
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--text);
+    width: 700px;
+    box-shadow: 1px 1px 8px #66e0e0 ;
+    border-radius: 10px;
+}
+.formControl{
+    padding:20px;
+}
+
+input[type="text"]{
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-size: var(--font);
+    border-radius: 10px 0 0 10px;
+    width: 380px;
+}
+
+.Task{
+    width: 100%;
+    border: 1px solid var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 430px;
+    margin-bottom: 20px;
+    border-radius: 15px 0;
+    padding: 15px;
+    color: var(--text);
+    box-shadow: 2px 2px 8px var(--btn) ;
+    font-size: var(--font);
+}
+
+.task_in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    accent-color: var(--btn);
+    transform: scale(2);
+    outline: 1px  ;
+    justify-self: flex-start;
+}
+
+input[type="checkbox"]:checked{
+    box-shadow: 1px 1px 8px #66e0e0 ;
+    transition: 0.6s;
+}
+
+
+button{
+    font-size: var(--font);
+    background-color: var(--btn);
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 0 10px 10px 0 ;
+    
+}
+
+.buttons button{
+    color: white;
+    margin: 6px;
+    border-radius: 5px;
+}
