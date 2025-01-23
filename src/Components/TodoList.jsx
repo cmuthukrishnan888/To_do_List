@@ -27,7 +27,7 @@ function TodoList() {
     )
   return (
     <div className='container'>
-        <h1>Productivity TODO</h1>
+        <h1 style={{color:"white"}}>Productivity TODO</h1>
         <Form addTask={addTask}/>
         {
           tasks.length!==0?(tasks.map(task=>(task.isEditing?(<Editform key={task.id} task={task} editTask={taskEdit}/>):(<Task key={task.id} Task={task} editTask={editTask} deleteTask={deleteTask} handleCheck={handleCheck}/>)))):<p style={{color:"white",fontSize:"20px",letterSpacing:"5px",fontWeight:"800",}}>No Tasks in the List</p>
